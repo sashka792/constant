@@ -1,0 +1,44 @@
+// Contacts
+.wrap-map {
+	max-width: 100%;
+	height: 100%;
+	@media screen and (max-width: 768px){
+		min-height: 400px;
+	}
+	@media screen and (max-width: 425px){
+		min-height: 250px;
+	}
+}
+.contact-form__form{
+	@media screen and (max-width: 768px){
+		margin-top: 30px;
+	}
+}
+.contacts {
+	margin-bottom: 100px;
+	.title-contacts{
+		margin-bottom: 10px;
+	}
+	&-info{
+		margin-top: 40px;
+		font-family: 'Roboto', sans-serif;
+		a{
+			color: #000;
+			text-decoration: none;
+		}
+		.fas {
+			margin-right: 25px;
+			font-size: 25px;
+			color: #025e8e;
+		}
+		.fa-at{
+			margin-left: -4px;
+		}
+		&__adress{
+			margin-bottom: 10px;
+		}
+		&__email{
+			margin-bottom: 10px;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+// Positions
+.positions{
+	.position {
+		display: flex;
+		position: relative;
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: 30px;
+		cursor: pointer;
+		img{
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+		.position__overlay {
+			background: rgba(0,0,0,0.64);
+			color: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			transition: all 0.5s ease;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			flex-direction: column;
+			&-title{
+				font-family: 'Raleway', sans-serif;
+				font-size: 1.125rem;
+				font-weight: 700;
+				margin-bottom: 10px;
+				@media screen and (min-width: 768px) and (max-width: 1200px){
+					margin-bottom: 8px;
+				}
+			}
+			&-salary{
+				font-family: 'Raleway', sans-serif;
+				font-size: 1.1rem;
+				margin-bottom: 20px;
+				@media screen and (min-width: 768px) and (max-width: 1200px){
+					margin-bottom: 10px;
+				}
+			}
+			&-description{
+				font-family: 'Roboto', sans-serif;
+				font-size: 0.9rem;
+				font-weight: 300;
+				margin-bottom: 30px;
+				@media screen and (min-width: 768px) and (max-width: 1200px){
+					margin-bottom: 15px;
+				}
+			}
+			&-messengers{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				.icon{
+					color: #fff;
+					i{
+						font-size: 35px;
+						margin: 0 20px;
+						&:hover{
+							cursor: pointer;
+						}
+					}
+					.fa-whatsapp:hover{
+						color: #2fd14b;
+					}
+					.fa-viber:hover{
+						color: #795098;
+					}
+					.fa-telegram-plane:hover{
+						color: #2ba0da;
+					}
+				}
+			}
+		}
+	}
+	.position:hover .position__overlay {
+		opacity: 1;
+	}
+}
