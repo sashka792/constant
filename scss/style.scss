@@ -77,13 +77,12 @@ textarea::placeholder {
 .header{
 	background-color: #000000;
 	position: absolute;
-	top: 50px;
 	width: 100%;
 	z-index: 2;
 	.mobile{
 		position: static;
 		padding: 0;
-		margin: 15px auto;
+		margin: 4px 0px;
 	}
 	@media screen and (max-width: 991px) {
 		top: 0;
@@ -96,7 +95,7 @@ textarea::placeholder {
 .menu-list {
 	list-style: none;
 	justify-content: center;
-	margin-left: 95px;
+	// margin-left: 25px;
 	@media (min-width: 320px) and (max-width: 1200px){
 		margin-left: 0;
 	}
@@ -109,6 +108,7 @@ textarea::placeholder {
 		color: #fff;
 		font-size: 1rem;
 		letter-spacing: 0.035em;
+		text-transform: uppercase;
 		text-decoration: none;
 		margin-right: 20px;
 		padding-bottom: 5px;
@@ -118,11 +118,8 @@ textarea::placeholder {
 			margin-right: 15px;
 		}
 		&:hover{
-			border-bottom: 2px #fff solid;
 			align-content: center;
-			@media screen and (min-width: 320px) and (max-width: 768px) {
-				border-bottom: 2px #00A8FF solid;
-			}
+			color: #147536;
 		}
 	}
 }
@@ -134,18 +131,19 @@ textarea::placeholder {
 }
 .navbar {
 	width: 100%;
-	padding: 30px 0px; // test size
+	padding: 5px 0px; // test size
 	.logo-desktop {
+		// width: 110px;
 		position: absolute;
 		transform: translateY(-50%);
-		top: 50%;
+		top: 30px;
 		@media screen and (min-width: 992px) {
 			display: block !important;	
 		}
 	}
 	.logo-mobile {
 		max-width: 60px;
-		margin-right: 20px;
+		margin-right: 20%;
 		@media screen and (max-width: 991px) {
 			display: block !important;	
 		}
@@ -165,8 +163,8 @@ textarea::placeholder {
 		line-height: 1.25;
 	}
 	.navbar-toggler-icon {
-		color: #fff;
-		border: 1px solid #fff;
+		color: #89c526;
+		border: 1px solid #89c526;
 		border-radius: 3px;
 		.fa-bars{
 			padding-top: 3px;
@@ -174,15 +172,18 @@ textarea::placeholder {
 		}
 	}
 	.navbar-collapse{
-		padding-left: 24%;
+		padding-left: 26%;
 		position: relative;
-		
 		@media screen and (max-width: 991px) {
 			min-height: 100vh;
 			padding-left: 0;
 			
 		}
 		.menu-list {
+			a:hover{
+				color: #147536;
+				transition: 0.2s;
+			}
 			@media screen and (max-width: 992px) {
 				padding-left: 0;
 			}
@@ -195,10 +196,15 @@ textarea::placeholder {
 		}
 		.social-media{
 			a {
+				font-size: 2rem;
 				text-decoration: none;
 				margin-left: 20px;
+				color: #fff;
 				@media screen and (max-width: 992px) {
 					margin: 0 10px;	
+				}
+				&:hover{
+					color: #147536;
 				}	
 			}
 			@media screen and (max-width: 992px) {
@@ -212,54 +218,68 @@ textarea::placeholder {
 	@media screen and (max-width: 768px) {
 		padding: 0rem 1rem;
 	}
+	.navbar-center{
+		margin-right: 60px;
+		@media screen and (min-width: 320px) and (max-width: 768px) {
+			display: none;
+		}
+	}
+	.navbar-right{
+		margin-left: 30px;
+		@media screen and (min-width: 320px) and (max-width: 768px) {
+			margin-left: 0px;
+		}
+		.menu-list{
+			margin-top: 0px;
+		}
+	}
 }
 .navbar-collapse.show {
 	transition: all 0.5s;
 }
 .main {
-	margin: 180px 0 60px;
+	margin: 0px 0 60px;
 	@media screen and (max-width: 768px){
 		margin: 120px 0 60px;
 	}
 }
 // Offer 
 .offer {
-	background: linear-gradient(to bottom, rgba(170, 249, 177, 0.19) 100%), url(../img/combine.jpg) no-repeat center/cover;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 100%), url(../img/combine.jpg) no-repeat center/cover;
 	min-height: 100vh;
 	background-attachment: fixed;
 	.offer__title{
-		max-width: 460px;
+		// max-width: 460px;
 		text-transform: uppercase;
-		align-items: center; 
-		text-align: center;
+		// align-items: center; 
+		// text-align: center;
 		margin: 20% auto 2%;
-		margin-top: calc(10% + 9.875rem);
-		font-family: 'Oswald', sans-serif;
-		font-size: 2.2rem;
+		margin-top: calc(5% + 7rem);
+		font-family: 'Roboto', sans-serif;
+		font-size: 2.6rem;
 		font-weight: 700;
 		color: #fff;
 		@media screen and (min-width: 320px) and (max-width: 767px){
-			font-size: 1.6rem;
-			margin-top: 100px;
+			font-size: 1.8rem;
+			margin-top: calc(15% + 7rem);
 		}
 	}
 	.offer__text{
-		margin: 0;
-		max-width: 640px;
-		padding: 15px;
-		margin: 0 auto;
+		max-width: 340px;
+		// padding: 15px;
 	}
 	
 	.offer__description {
 		font-family: 'Roboto', sans-serif;
-		align-items: center;
-		text-align: center;
-		font-size: 18px;
-		line-height: 1.5em;
-		font-weight: 400;
+		// align-items: center;
+		// text-align: center;
+		font-size: 2.4rem;
+		line-height: 1.6em;
+		letter-spacing: 0.05em;
+		font-weight: 300;
 		color: #fff; 
 		border-radius: 10px;
-		margin: 0;
+		margin: 15px 0;
 		@media screen and (min-width: 320px){
 			font-size: 1rem;
 		}
@@ -480,8 +500,8 @@ footer{
 	
 	height: 60px;
 	
-	box-shadow: 0 -1px 21px -4px #9b9b9b;
-	background-color:#ffffff;
+	box-shadow: 0 -1px 10px -4px #9b9b9b;
+	background-color:#000;
 	
 	&__item{
 		flex-grow:1;
@@ -500,7 +520,7 @@ footer{
 		display:flex;
 		flex-direction:column;
 		i{
-			color: #258033;
+			color: #89c526;
 			font-size: 2rem;
 		}		
 	}
