@@ -26,6 +26,9 @@ section.contacts{
 	&-info{
 		margin-top: 40px;
 		font-family: 'Roboto', sans-serif;
+		.email-wrap{
+			margin-left: -5px;
+		}
 		a{
 			color: #000;
 			text-decoration: none;
@@ -39,10 +42,16 @@ section.contacts{
 			margin-left: -4px;
 		}
 		&__adress{
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 		&__email{
-			margin-bottom: 10px;
+			margin-bottom: 20px;
+		}
+		.number-desc{
+			font-weight: 700;
+			&__service{
+				margin-top: 15px;
+			}
 		}
 	}
 }
