@@ -94,7 +94,7 @@
   opacity: 1; }
 
 section.services {
-  padding-top: 100px; }
+  padding-top: 120px; }
 
 .service-image {
   max-width: 50%;
@@ -109,7 +109,8 @@ section.services {
 .about .about-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  padding-top: 140px; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .about .about-title {
       padding-top: 0px; } }
@@ -583,7 +584,8 @@ textarea::placeholder {
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
       font-weight: 300;
-      line-height: 1.6em; }
+      line-height: 1.6em;
+      text-align: left; }
       @media screen and (max-width: 320px) {
         .process .work-step__descr {
           font-size: 0.8rem; } }
