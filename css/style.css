@@ -109,9 +109,10 @@ section.services {
 .about .about-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 0.045em;
-  padding-top: 120px; }
+  font-size: 1.8rem; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .about .about-title {
+      padding-top: 0px; } }
 
 .about .about-title--sub {
   font-size: 1.5rem; }
@@ -509,7 +510,7 @@ textarea::placeholder {
   margin: 0px 0 60px; }
   @media screen and (max-width: 768px) {
     .main {
-      margin: 120px 0 60px; } }
+      margin: 100px 0 60px; } }
 
 .offer {
   background: -webkit-gradient(linear, left top, left bottom, to(rgba(0, 0, 0, 0.5))), url(../img/combine.jpg) no-repeat center/cover;
@@ -521,27 +522,30 @@ textarea::placeholder {
   .offer .offer__title {
     text-transform: uppercase;
     margin: 20% auto 2%;
-    margin-top: calc(5% + 7rem);
+    margin-top: calc(8% + 7rem);
     font-family: 'Roboto', sans-serif;
-    font-size: 2.6rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #fff; }
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
       .offer .offer__title {
         font-size: 1.8rem;
         margin-top: calc(15% + 7rem); } }
   .offer .offer__text {
-    max-width: 340px; }
+    max-width: 380px; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .offer .offer__text {
+        max-width: 300px; } }
   .offer .offer__description {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     line-height: 1.6em;
     letter-spacing: 0.05em;
     font-weight: 300;
     color: #fff;
     border-radius: 10px;
     margin: 15px 0; }
-    @media screen and (min-width: 320px) {
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
       .offer .offer__description {
         font-size: 1rem; } }
 

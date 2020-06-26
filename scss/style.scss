@@ -252,7 +252,7 @@ textarea::placeholder {
 .main {
 	margin: 0px 0 60px;
 	@media screen and (max-width: 768px){
-		margin: 120px 0 60px;
+		margin: 100px 0 60px;
 	}
 }
 // Offer 
@@ -266,18 +266,21 @@ textarea::placeholder {
 		// align-items: center; 
 		// text-align: center;
 		margin: 20% auto 2%;
-		margin-top: calc(5% + 7rem);
+		margin-top: calc(8% + 7rem);
 		font-family: 'Roboto', sans-serif;
-		font-size: 2.6rem;
+		font-size: 3rem;
 		font-weight: 700;
 		color: #fff;
-		@media screen and (min-width: 320px) and (max-width: 767px){
+		@media only screen and (min-width: 320px) and (max-width: 767px){
 			font-size: 1.8rem;
 			margin-top: calc(15% + 7rem);
 		}
 	}
 	.offer__text{
-		max-width: 340px;
+		max-width: 380px;
+		@media only screen and (min-width: 320px) and (max-width: 767px){
+			max-width: 300px;
+		}
 		// padding: 15px;
 	}
 	
@@ -285,14 +288,14 @@ textarea::placeholder {
 		font-family: 'Roboto', sans-serif;
 		// align-items: center;
 		// text-align: center;
-		font-size: 2.4rem;
+		font-size: 1.5rem;
 		line-height: 1.6em;
 		letter-spacing: 0.05em;
 		font-weight: 300;
 		color: #fff; 
 		border-radius: 10px;
 		margin: 15px 0;
-		@media screen and (min-width: 320px){
+		@media only screen and (min-width: 320px) and (max-width: 767px){
 			font-size: 1rem;
 		}
 	}
