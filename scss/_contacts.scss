@@ -1,6 +1,9 @@
 // Contacts
 section.contacts{
 	padding-top: 120px;
+	@media screen and (max-width: 768px){
+		padding-top: 0px;
+	}
 }
 
 .wrap-map {
@@ -13,11 +16,17 @@ section.contacts{
 		min-height: 250px;
 	}
 }
-.contact-form__form{
-	@media screen and (max-width: 768px){
-		margin-top: 30px;
+.map {
+	@media screen and (max-width: 425px){
+		order: 2;
 	}
 }
+.contact-info {
+	@media screen and (max-width: 425px){
+		order: 1;
+	}
+}
+
 .contacts {
 	margin-bottom: 100px;
 	.title-contacts{
@@ -47,8 +56,14 @@ section.contacts{
 		&__email{
 			margin-bottom: 20px;
 		}
+		&__mobile{
+			@media screen and (max-width: 768px){
+				margin-bottom: 30px;
+			}
+		}
 		.number-desc{
 			font-weight: 700;
+			
 			&__service{
 				margin-top: 15px;
 			}

@@ -95,10 +95,13 @@
 
 section.services {
   padding-top: 120px; }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    section.services {
+      padding-top: 0px;
+      margin-bottom: 120px; } }
 
-.service-image {
-  max-width: 50%;
-  width: 50%;
+.service-img {
+  max-width: 100%;
   height: auto; }
 
 .service__overlay-title {
@@ -111,7 +114,7 @@ section.services {
   font-weight: 700;
   font-size: 1.8rem;
   padding-top: 140px; }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
     .about .about-title {
       padding-top: 0px; } }
 
@@ -242,6 +245,9 @@ section.services {
 
 section.contacts {
   padding-top: 120px; }
+  @media screen and (max-width: 768px) {
+    section.contacts {
+      padding-top: 0px; } }
 
 .wrap-map {
   max-width: 100%;
@@ -253,9 +259,17 @@ section.contacts {
     .wrap-map {
       min-height: 250px; } }
 
-@media screen and (max-width: 768px) {
-  .contact-form__form {
-    margin-top: 30px; } }
+@media screen and (max-width: 425px) {
+  .map {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; } }
+
+@media screen and (max-width: 425px) {
+  .contact-info {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; } }
 
 .contacts {
   margin-bottom: 100px; }
@@ -279,6 +293,9 @@ section.contacts {
       margin-bottom: 20px; }
     .contacts-info__email {
       margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .contacts-info__mobile {
+        margin-bottom: 30px; } }
     .contacts-info .number-desc {
       font-weight: 700; }
       .contacts-info .number-desc__service {
@@ -429,7 +446,7 @@ textarea::placeholder {
         display: block !important; } }
   .navbar .logo-mobile {
     max-width: 60px;
-    margin-right: 20%; }
+    margin-right: 12px; }
     @media screen and (max-width: 991px) {
       .navbar .logo-mobile {
         display: block !important; } }
