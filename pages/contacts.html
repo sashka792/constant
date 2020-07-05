@@ -84,7 +84,7 @@
                 <div class="row mb-4">
                     <div class="col-12">
                         <h3 class="title-contacts text-center">
-                            Звяжіться з нами 
+                            Звяжіться з нами
                         </h3>
                     </div>
                 </div>
@@ -99,7 +99,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 contact-info">
-                        <form action="#" class="contact-form__form">
+                        <form class="contact-form__form">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="Constant Agro">
+                            <input type="hidden" name="admin_email" value="bog.dats@gmail.com">
+                            <input type="hidden" name="form_subject" value="Лист від клієнта">
+                            <!-- END Hidden Required Fields -->
                             <input class="contact-form__form_name" type="text" name="name" placeholder="Ваше ім'я"
                                 required>
                             <input class="contact-form__form_email" type="email" name="email" placeholder="Ваш e-mail"
@@ -203,8 +208,8 @@
                             <i class="fab fa-facebook-square"></i>
                         </a>
                         <a target="_blank" href="https://www.youtube.com/">
-							<i class="fab fa-youtube"></i>
-						</a>
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                     <p class="copyright">
                         © 2020 Constant Agro. All rights reserved.
